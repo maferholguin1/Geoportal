@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geoportal de Calidad de Agua - Ecuador</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 300;
+        }
+        
+        .flag-colors {
+            height: 4px;
+            background: linear-gradient(to right, #FFD700 0%, #0052CC 33%, #FF0000 66%);
+            border-radius: 2px;
+            margin: 20px auto;
+            width: 100px;
+        }
+        
+        .main-content {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
+        
+        .description {
+            text-align: center;
+            font-size: 1.1em;
+            margin-bottom: 40px;
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .feature-card {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+        
+        .feature-card h3 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+        
+        .feature-card p {
+            font-size: 0.95em;
+            opacity: 0.9;
+        }
+        
+        .cta-section {
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            border-radius: 15px;
+            color: white;
+        }
+        
+        .cta-button {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .cta-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9em;
+        }
+        
+        .water-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .main-content {
+                padding: 25px;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="water-icon">💧</div>
+            <h1>Geoportal de Calidad de Agua</h1>
+            <div class="flag-colors"></div>
+            <p class="subtitle">República del Ecuador</p>
+        </header>
+        
+        <div class="main-content">
+            <div class="description">
+                <p>Bienvenido al Sistema de Información Geográfica para el monitoreo y análisis de la calidad del agua en todo el territorio ecuatoriano. Una herramienta esencial para la gestión sostenible de nuestros recursos hídricos.</p>
+            </div>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <h3>🗺️ Mapas Interactivos</h3>
+                    <p>Visualiza datos de calidad de agua en tiempo real a través de mapas dinámicos y fáciles de navegar.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>📊 Análisis de Datos</h3>
+                    <p>Accede a reportes detallados y estadísticas sobre parámetros físicos, químicos y biológicos del agua.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🌍 Cobertura Nacional</h3>
+                    <p>Información completa de todas las regiones del Ecuador: Costa, Sierra, Amazonía y Galápagos.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🔬 Monitoreo Continuo</h3>
+                    <p>Seguimiento permanente de la calidad del agua en ríos, lagos, reservorios y fuentes hídricas.</p>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <h2>Explora Nuestros Recursos Hídricos</h2>
+                <p>Descubre el estado actual de la calidad del agua en tu región y contribuye al cuidado del medio ambiente.</p>
+                <button class="cta-button" onclick="alert('Funcionalidad del mapa en desarrollo')">
+                    Acceder al Geoportal
+                </button>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2025 Geoportal de Calidad de Agua Ecuador | Sistema de monitoreo ambiental</p>
+            <p>Comprometidos con la conservación y protección de nuestros recursos hídricos</p>
+        </footer>
+    </div>
+</body>
+</html>
